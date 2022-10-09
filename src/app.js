@@ -46,16 +46,15 @@ window.onload = function() {
     const card = document.createElement("div");
     card.classList.add("card", cardSuit.toLowerCase());
     card.classList.add("mx-auto");
+    card.classList.add("align-middle");
     card.innerHTML =
       '<span class="card-value-suit top">' +
-      cardValue +
       entity +
       "</span>" +
       '<span class="card-suit">' +
-      entity +
+      cardValue +
       "</span>" +
       '<span class="card-value-suit bot">' +
-      cardValue +
       entity +
       "</span>";
     document.querySelector("#container").appendChild(card);

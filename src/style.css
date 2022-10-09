@@ -15,13 +15,13 @@ body {
   position: absolute;
 }
 .card-value-suit.top {
-  top: 5px;
-  left: 5px;
+  top: 5 px;
+  left: 7px;
 }
 .card-value-suit.bot {
   transform: rotate(180deg);
   bottom: 5px;
-  right: 5px;
+  right: 7px;
 }
 .card-suit {
   font-size: 50px;
@@ -29,6 +29,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   left: 25%;
+  padding: 5px;
 }
 .card.spades,
 .card.clubs {
