@@ -4,6 +4,7 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+import { Button } from "bootstrap";
 
 window.onload = function() {
   //write your code here
@@ -58,12 +59,11 @@ window.onload = function() {
       entity +
       "</span>";
     document.querySelector("#container").appendChild(card);
-    // const botonewcard = document.createElement("button");
-    // botonewcard.classList.add("buton");
-    // botonewcard.classList.add("btn btn-secondary btn-sm");
-    // card.innerHTML = "<button>Generate new card</button>";
-    // botonwecard.addEventListener("click", randomCard(cards));
   }
   const cards = deckBuilder();
   randomCard(cards);
+  const boton = document.querySelector("#boton");
+  boton.addEventListener("click", function() {
+    randomCard(cards);
+  });
 };
